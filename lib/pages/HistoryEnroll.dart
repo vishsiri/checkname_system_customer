@@ -5,15 +5,15 @@ import 'package:ce_reg_system/components/CustomBottomNavigationBar.dart';
 import '../router.dart';
 import '../utils.dart';
 
-class SubjectPage extends StatefulWidget {
-  const SubjectPage({super.key});
+class HistoryEnroll extends StatefulWidget {
+  const HistoryEnroll({super.key});
 
   @override
-  State<SubjectPage> createState() => _SubjectPageState();
+  State<HistoryEnroll> createState() => _HistoryEnrollState();
 }
 
-class _SubjectPageState extends State<SubjectPage> {
-  int _currentIndex = 1;
+class _HistoryEnrollState extends State<HistoryEnroll> {
+  int _currentIndex = 0;
 
   Widget buildCourseEntry(String courseCode, String courseTitle, String room, String type, Color backgroundColor, String link) {
     return Padding(
@@ -90,7 +90,7 @@ class _SubjectPageState extends State<SubjectPage> {
                     ),
                   ),
                 ),
-                const Icon(Icons.chevron_right)
+                const Icon(Icons.check)
               ],
             ),
           ),
@@ -103,8 +103,8 @@ class _SubjectPageState extends State<SubjectPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        automaticallyImplyLeading: false, // Remove the back button
-        backgroundColor: Colors.blue, // Set the background color to blue
+        automaticallyImplyLeading: true,
+        backgroundColor: Colors.blue,
         title: Container(
           width: MediaQuery.of(context).size.width,
           height: 60,
@@ -116,10 +116,17 @@ class _SubjectPageState extends State<SubjectPage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                "รายวิชาที่ลงทะเบียนเรียน",
+                "ประวัติการลงทะเบียน",
                 style: TextStyle(
-                  color: Colors.white, // Set the text color to white
+                  color: Colors.white,
                   fontSize: 20,
+                ),
+              ),
+              Text(
+                "รายละเอียดการลงทะเบียนของคุณ",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 14,
                 ),
               ),
             ],
@@ -137,11 +144,7 @@ class _SubjectPageState extends State<SubjectPage> {
       ),
       body: ListView(
         children: [
-          buildCourseEntry("PR204 / 311B", "Personal Image and Impression Management (LECT)", "Room C2-707 / No. 27", "Type: LECT DMC.FM วิชาโท/เลือกเสรี", Colors.blue, "/subject/1"),
-          buildCourseEntry("PR204 / 311AAA", "Personal Image and Impression Management (LECT)", "Room C2-707 / No. 27", "Type: LECT DMC.FM วิชาโท/เลือกเสรี", Colors.red, "/subject/2"),
-          buildCourseEntry("PR204 / 311AAA", "Personal Image and Impression Management (LECT)", "Room C2-707 / No. 27", "Type: LECT DMC.FM วิชาโท/เลือกเสรี", Colors.orange, "/subject/3"),
-          buildCourseEntry("PR204 / 311AAA", "Personal Image and Impression Management (LECT)", "Room C2-707 / No. 27", "Type: LECT DMC.FM วิชาโท/เลือกเสรี", Colors.yellow, "/subject/4"),
-          buildCourseEntry("PR204 / 311AAA", "Personal Image and Impression Management (LECT)", "Room C2-707 / No. 27", "Type: LECT DMC.FM วิชาโท/เลือกเสรี", Colors.green, "/subject/4"),
+          buildCourseEntry("PR204 / 311B", "Personal Image and Impression Management (LECT)", "","Enrollment Time : 10.30 PM (10/20/2023)", Colors.lightGreen, "/"),
         ],
       ),
     );

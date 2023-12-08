@@ -39,7 +39,7 @@ class ProfilePage extends StatelessWidget {
                         shape: BoxShape.circle,
                       ),
                       child: Image.network(
-                        'https://cdn.discordapp.com/attachments/1154599666361585668/1182150550498844702/FB_IMG_1701917039671.jpg',
+                        'https://cdn.discordapp.com/attachments/998209779375812658/1182471324707336282/image.png',
                         fit: BoxFit.cover,
                         cacheWidth: 180,
                         cacheHeight: 180,
@@ -64,8 +64,8 @@ class ProfilePage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       SizedBox(height: 10),
-                      Text('วิศว์ ศิริวัฒน์', style: TextStyle(fontSize: 14.0)),
-                      Text('วิศวกรรมคอมพิวเตอร์', style: TextStyle(fontSize: 10.0, color: Colors.grey)),
+                      Text('เอกชัย เดวกาดาร์', style: TextStyle(fontSize: 14.0)),
+                      Text('วิศวกรรมศาสตร์', style: TextStyle(fontSize: 10.0, color: Colors.grey)),
                     ],
                   ),
                 ),
@@ -73,8 +73,8 @@ class ProfilePage extends StatelessWidget {
             ),
           ),
           _buildCard('ข้อมูลส่วนบุคคล', [
-            _buildPersonalInfo('ชื่อ (อังกฤษ)', 'VISH SIRIWATANA'),
-            _buildPersonalInfo('ชื่อ (ไทย)', 'วิศว์ ศิริวัฒน์'),
+            _buildPersonalInfo('ชื่อ (อังกฤษ)', 'Aekkachai Dewkada'),
+            _buildPersonalInfo('ชื่อ (ไทย)', 'เอกชัย เดวกาดาร์'),
             Row(
               children: [
                 Expanded(
@@ -94,13 +94,13 @@ class ProfilePage extends StatelessWidget {
                   child: _buildPersonalInfo('ประเภทผู้ใช้', 'นักศึกษา'),
                 ),
                 Expanded(
-                  child: _buildPersonalInfo('รหัสประจำตัว', '00000000'),
+                  child: _buildPersonalInfo('รหัสประจำตัว', '1630902649'),
                 ),
               ],
             ),
-            _buildPersonalInfo('ชั้นปี', '2564'),
-            _buildPersonalInfo('คณะ (ไทย)', 'วิทยาศาสตร์'),
-            _buildPersonalInfo('อีเมล', '00000000@ac.th'),
+            _buildPersonalInfo('ชั้นปี', '2565'),
+            _buildPersonalInfo('คณะ (ไทย)', 'วิศวกรรมศาสตร'),
+            _buildPersonalInfo('อีเมล', 'Aekkachai.dewk@bumail.net'),
           ]),
           ElevatedButton.icon(
             onPressed: () => AppRouter.router.navigateTo(context, '/authen', transition: TransitionType.cupertino),

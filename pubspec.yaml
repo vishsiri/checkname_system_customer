@@ -66,6 +66,7 @@ flutter:
     - assets/img/button_go_first.png
     - assets/img/reg_text.png
     - assets/img/reg_human.png
+    - assets/subject_data.json
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 

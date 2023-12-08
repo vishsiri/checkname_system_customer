@@ -1,0 +1,32 @@
+{
+  "1": {
+    "name": "Subject 1",
+    "subjectCode": "ABC123",
+    "rate": "3",
+    "section": "A",
+    "instructor": "Dr. John Doe",
+    "enter": "Enrolled",
+    "learnt": "Mon, Wed 10:00 AM - 11:30 AM",
+    "room": "Room 101"
+  },
+  "2": {
+    "name": "Subject 2",
+    "subjectCode": "DEF456",
+    "rate": "4",
+    "section": "B",
+    "instructor": "Prof. Jane Smith",
+    "enter": "Not Enrolled",
+    "learnt": "Tue, Thu 2:00 PM - 3:30 PM",
+    "room": "Room 202"
+  },
+  "3": {
+    "name": "Subject 3",
+    "subjectCode": "GHI789",
+    "rate": "3",
+    "section": "C",
+    "instructor": "Dr. Mark Johnson",
+    "enter": "Enrolled",
+    "learnt": "Mon, Wed 1:00 PM - 2:30 PM",
+    "room": "Room 303"
+  }
+}

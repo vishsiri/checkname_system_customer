@@ -24,7 +24,7 @@ class _AuthenPageState extends State<AuthenPage> {
 
     // Navigate to the second page when the button is pressed
     // Note: Add your authentication logic here using the entered email and password
-    if (_emailController.text == 'a' && _passwordController.text == 'a') {
+    if (_emailController.text == 'Aekkachai.dewk@bumail.net' && _passwordController.text == '1630902649') {
       // Successful login, navigate to the next page
       AppRouter.router.navigateTo(context, '/subjectAll', transition: TransitionType.cupertino);
       print('Successful login');
